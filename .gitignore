@@ -1,0 +1,61 @@
+# Node.js dependencies
+node_modules/
+
+# Vite specific build output
+/dist/
+/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store       # macOS specific
+Thumbs.db       # Windows specific
+
+# IDE and Editor specific files
+.vscode/         # VSCode settings
+.idea/           # JetBrains/IntelliJ settings
+*.swp            # Vim swap files
+*.swo            # Vim swap files
+
+# Environment variable files (common in Node.js projects)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vite cache
+.vite/
+
+# Svelte specific (if using Vite with Svelte)
+.svelte/
+
+# Test coverage
+coverage/
+
+# Generated files and build artifacts
+*.tgz            # Tarballs, commonly used in npm packages
+
+# npm logs
+npm-debug.log*
+
+# TypeScript build output
+lib/
+out/
+
+# Yarn specific files
+.yarn/
+
+# Next.js (if used in combination with Vite for SSR or hybrid projects)
+.next/
+
+# Firebase hosting config (if used)
+.firebase/
+
+# Optional lock files
+package-lock.json
+yarn.lock
