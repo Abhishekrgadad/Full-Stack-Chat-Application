@@ -4,19 +4,19 @@ import authRoutes from './routes/auth.routes.js';
 import connectToMongodb from './db/connectToMongodb.js';
 
 
-
-dotenv.config();
 const app = express();
-
 const PORT = process.env.PORT || 5000;
 
-app.get("/", (req,res)=>{
-    //root route http://localhost:5000/
-    res.send("hello world");
-});
+dotenv.config();
 
+app.use(express.json());//Parse the incoming requests with json payloads(from req.body)
 //we are using middleware because its time waste to create new routes for each one
 app.use("/api/auth", authRoutes);
+
+// app.get("/", (req,res)=>{
+//     //root route http://localhost:5000/
+//     res.send("hello world");
+// });
 
 
 
