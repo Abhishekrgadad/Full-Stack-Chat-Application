@@ -20,6 +20,6 @@ const conversationSchema = new mongoose.Schema(
 );
 
 
-const conversation = mongoose.model("conversation",conversationSchema);
+const Conversation = mongoose.model("Conversation",conversationSchema);
 
-export default conversation;
+export default Conversation;
